@@ -1,0 +1,24 @@
+{
+    "name": "adapt-theme-wbtz",
+    "repository": "git@github.com:davetaz/adapt-theme-wbtz.git",
+    "framework": "^2.0.0",
+    "version": "0.2.0",
+    "homepage": "https://github.com/davetaz/adapt-theme-wbtz",
+    "issues": "https://github.com/davetaz/adapt-theme-wbtz/issues",
+    "displayName": "Tanzania (WB)",
+    "theme": "Tanzania (WB)",
+    "description": "A custom theme for ODI modules (World bank Tanzania edition)",
+    "main": "js/wbtz.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-theme"
+    ],
+    "license": "GPLv3",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
