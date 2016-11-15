@@ -10,12 +10,12 @@
 	}
 
 	.menu-header {
-		margin-bottom: -30px;
-		background: url('assets/blobs.png');
-		background-size: cover;
-		background-color: @menu-header-background-color;
+		margin-bottom: -100px;
+		@media all and (max-width:920px) {
+                        margin-bottom: -80px;
+                }
     		@media all and (max-width:(@device-width-medium - 1px)) {
-			margin-bottom: 0px;
+			margin-bottom: -40px;
     		}
 	}
 
