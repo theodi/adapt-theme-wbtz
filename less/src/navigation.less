@@ -5,13 +5,22 @@
     min-width: @default-width;
     *width: @default-width;
     overflow: hidden;
-    background-image: url('assets/banner.png');
-    background-repeat: no-repeat;
     background-color: @navigation-color;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     height: (@navigation-padding * 2) + @icon-size;
 
     .ie8 & {
         max-width: @ie8-max-width;
+    }
+
+    .icon {
+        padding: @navigation-padding;
+        color: @navigation-icon-color;
+        .transition-color;
+
+        .no-touch &:hover {
+            color: @navigation-icon-color-hover;
+        }
     }
 
     @media all and (max-width:(@device-width-large - 1px)) {
@@ -25,17 +34,11 @@
         min-width: 100%;
         *width: 100%;
         height:@navigation-height-mobile;
-    }
-
-    .icon {
-        padding: @navigation-padding;
-        color: @navigation-icon-color;
-        .transition-color;
-
-        .no-touch &:hover {
-            color: @navigation-icon-color-hover;
+        .icon {
+            padding: 14px;
         }
     }
+
 }
 
 
